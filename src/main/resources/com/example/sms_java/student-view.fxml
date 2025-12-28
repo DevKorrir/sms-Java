@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.sms_java.controller.StudentController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+
+    <Label text="Student Management System" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10.0">
+        <TextField fx:id="regNoField" promptText="Registration Number"/>
+        <TextField fx:id="nameField" promptText="Name"/>
+        <TextField fx:id="courseField" promptText="Course"/>
+        <Button text="Add Student" onAction="#onAddStudentClick"/>
+    </HBox>
+
+    <TableView fx:id="studentTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="regNoColumn" text="Reg No" prefWidth="100"/>
+            <TableColumn fx:id="nameColumn" text="Name" prefWidth="150"/>
+            <TableColumn fx:id="courseColumn" text="Course" prefWidth="150"/>
+        </columns>
+    </TableView>
+</VBox>
