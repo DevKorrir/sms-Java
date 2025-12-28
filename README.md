@@ -80,3 +80,34 @@ opens com.example.sms_java.model to javafx.base;
 - `src/main/java/com/example/sms_java/db/DatabaseConnection.java`: Utility for database connectivity.
 - `src/main/java/com/example/sms_java/model/Student.java`: Student entity class.
 - `src/main/resources/com/example/sms_java/student-view.fxml`: UI layout definition.
+
+```css
+student-management-system
+│
+├── build.gradle
+├── settings.gradle
+├── gradlew
+├── gradlew.bat
+│
+└── src
+    └── main
+        ├── java
+        │   └── com.example.studentms
+        │       ├── MainApp.java
+        │       │
+        │       ├── db
+        │       │   └── DatabaseConnection.java
+        │       │
+        │       ├── model
+        │       │   └── Student.java
+        │       │
+        │       ├── dao
+        │       │   └── StudentDAO.java
+        │       │
+        │       └── controller
+        │           └── StudentController.java
+        │
+        └── resources
+            └── application.css
+```
+
